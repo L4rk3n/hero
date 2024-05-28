@@ -1,9 +1,12 @@
 ﻿using ConsoleApp1.Chapitres;
+using ConsoleApp1.module;
 using ConsoleApp1.Dessins;
-using ConsoleApp1.Textes;
+using ConsoleApp1.Fiches;
 using System;
 using System.Reflection;
 using System.Text;
+using ConsoleApp1.Texte;
+using System.Media;
 
 class Program
 
@@ -11,39 +14,60 @@ class Program
     static void Main(string[] args)
 
     {
+        Console.SetWindowSize(150, 50);
+        Dessin crayon = new Dessin();
+        Textes roman = new Textes();
+        Combat fight = new Combat();
+        Pnj portrait = new Pnj(); 
 
-        bool death = false;
         bool theend = false;
         int nextChap = 1;
         int node = 1;
-        Dessin crayon = new Dessin ();
+        string answer = "";
 
-
-
-        Textes roman = new Textes();
         Chapitre histoire = new Chapitre();
+        Hero hero;
 
-        Delegate[] dessins = new Delegate[]
-{
-        crayon.Dessin1,
-        crayon.Dessin2
-};
+        
+        crayon.dessins[0].DynamicInvoke();
+        Console.ReadLine();
+        Console.Clear();
 
-        Delegate[] chapitres = new Delegate[]
+        portrait.Dessinpnj("choixperso");
+        string affichage = roman.dictionnaire[0];
+        Console.WriteLine(affichage);
+        do
         {
-        (Func<int>)histoire.Chapitre1,
-        (Func<int>)histoire.Chapitre2,
-        (Func<int>)histoire.Chapitre3,
-        (Func<int>)histoire.Chapitre4
-        };
+
+            Console.WriteLine("Quelle race voulez vous jouer ? elfe(1)ou nain (2)");
+            answer = Console.ReadLine();
+        } while ((answer != "1") && (answer != "2"));
+
+        if (answer == "1")
+        {
+            hero = new Elfe();
+            hero.Creation();
+        }
+        else
+        {
+            hero = new Nain();
+            hero.Creation();
+        }
+        hero.AfficherInfos();
 
         do
         {
-            //dessins[dessin(nextChap - 1)]();
-            int chapTemp = (int)chapitres[nextChap-1].DynamicInvoke();
+            crayon.dessins[nextChap].DynamicInvoke();
+            affichage = roman.dictionnaire[nextChap];
+            Console.WriteLine(affichage);
+            int chapTemp = (int)histoire.chapitres[nextChap].DynamicInvoke(hero);
             nextChap = chapTemp;
 
-        } while (death == false || theend == false );
+        } while ( !hero.Mort );
+
+        if (hero.Mort is true) Console.WriteLine("Perdu boulet !");
+        if (hero.Mort is false) Console.WriteLine("Bravo tu es arrivé au bout!, et quoi tu veux un cadeau ?");
+        
     }
 }
 
