@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Media;
 using ConsoleApp1.Dessins;
+using ConsoleApp1.Donjon;
 
 namespace ConsoleApp1.module
 {
@@ -64,6 +65,12 @@ namespace ConsoleApp1.module
             }
             Console.ReadLine();
         return tomber;
+        }
+        public void miniDonjon(Hero Hero)
+        {
+            Case[,] Donjon = Case.CreerDonjon(15,15);
+            Console.WriteLine("Vous sortez du mini donjon pour continuer l'aventure !");
+            Console.ReadLine();
         }
 
         //public void atelier(Hero Hero);

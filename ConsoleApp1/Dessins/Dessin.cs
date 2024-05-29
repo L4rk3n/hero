@@ -28,6 +28,11 @@ namespace ConsoleApp1.Dessins
             Dessin13,
             Dessin14,
             Dessin15,
+            Dessin16,
+            Dessin17,
+            Dessin18,
+            Dessin19,
+            Dessin20,
         };
         }
         public Delegate[] dessins { get; set; }
@@ -170,34 +175,33 @@ namespace ConsoleApp1.Dessins
         }
         public void Dessin15()
         {
-            StringBuilder sb = new StringBuilder();
-
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-
-            Console.WriteLine(sb.ToString());
+            Console.Clear();
+            Console.WriteLine("");
+        }
+        public void Dessin16()
+        {
+            Console.Clear();
+            Console.WriteLine("");
+        }
+        public void Dessin17()
+        {
+            Console.Clear();
+            Console.WriteLine("");
+        }
+        public void Dessin18()
+        {
+            Console.Clear();
+            Console.WriteLine("");
+        }
+        public void Dessin19()
+        {
+            Console.Clear();
+            Console.WriteLine("");
+        }
+        public void Dessin20()
+        {
+            Console.Clear();
+            Console.WriteLine("");
         }
     }
 }

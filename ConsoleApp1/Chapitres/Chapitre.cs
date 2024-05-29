@@ -37,6 +37,11 @@ namespace ConsoleApp1.Chapitres
         Chapitre13,
         Chapitre14,
         Chapitre15,
+        Chapitre16,
+        Chapitre17,
+        Chapitre18,
+        Chapitre19,
+        Chapitre20,
         };
         }
         Audio player = new Audio();
@@ -249,6 +254,36 @@ namespace ConsoleApp1.Chapitres
             return choix;
         }
         public int Chapitre15(Fiches.Hero Hero)
+        {
+            player.playWind();
+            int choix = 16;
+            return choix;
+        }
+        public int Chapitre16(Fiches.Hero Hero)
+        {
+            player.playWind();
+            int choix = DemanderChoix(new int[] { 2, 3, 4 });
+            return choix;
+        }
+        public int Chapitre17(Fiches.Hero Hero)
+        {
+            player.playWind();
+            int choix = DemanderChoix(new int[] { 2, 3, 4 });
+            return choix;
+        }
+        public int Chapitre18(Fiches.Hero Hero)
+        {
+            player.playWind();
+            int choix = DemanderChoix(new int[] { 2, 3, 4 });
+            return choix;
+        }
+        public int Chapitre19(Fiches.Hero Hero)
+        {
+            player.playWind();
+            int choix = DemanderChoix(new int[] { 2, 3, 4 });
+            return choix;
+        }
+        public int Chapitre20(Fiches.Hero Hero)
         {
             player.playWind();
             int choix = DemanderChoix(new int[] { 2, 3, 4 });
