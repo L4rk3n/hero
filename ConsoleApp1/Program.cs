@@ -19,12 +19,12 @@ class Program
         Dessin crayon = new Dessin();
         Textes roman = new Textes();
         Combat fight = new Combat();
-        Pnj portrait = new Pnj(); 
+        Pnj portrait = new Pnj();
 
         bool theend = false;
         int nextChap = 1;
         int node = 1;
-        string answer = "";
+        string answer = " ";
 
         Chapitre histoire = new Chapitre();
         Hero hero;
@@ -57,6 +57,12 @@ class Program
         {
             hero = new Nain();
             hero.Creation();
+        }
+        if (hero.Nom == "master")
+        {
+            Console.WriteLine("Quel chapitre voulez vous testez maître?");
+            nextChap = int.Parse(Console.ReadLine());
+
         }
         hero.AfficherInfos();
 

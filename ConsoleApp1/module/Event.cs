@@ -44,12 +44,24 @@ namespace ConsoleApp1.module
         }
         public bool pontAgi(Hero Hero)
         {
+
+            Dice dede = new Dice();
+            bool tomber  = new bool();
             Pnj adversaire = new Pnj();
             Console.Clear();
             player.playWind();
             adversaire.Dessinpnj("trou");
-            
-            Console.WriteLine("Il est temps de reprendre votre route !");
+            Console.WriteLine("Vous tentez de sauter au dessus du trou");
+            if ((Hero.Agi + dede.Rolldice(1, 6)) < 8)
+            {
+                Console.WriteLine("Vous vous ratez completement et vous tombez dans le trou...");
+                tomber = true;
+            }
+            else 
+            {
+                tomber = false;
+                Console.WriteLine("Vous parvenez a sauter par dessus le trou sans problème");
+            }
             Console.ReadLine();
         return tomber;
         }

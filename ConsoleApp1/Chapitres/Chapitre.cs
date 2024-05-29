@@ -190,17 +190,33 @@ namespace ConsoleApp1.Chapitres
         public int Chapitre13(Fiches.Hero Hero)
         {
             player.playWind();
+            bool tomber = false;
             Dice dede = new Dice();
             Event rencontre = new Event();
-            for (int i = 1; i <= 3; i++)
-                if ((dede.Rolldice(1, 6) < 3) && (!Hero.Mort))
+            int i = 1;
+            do
+            {
+                if ((dede.Rolldice(1, 6) < 3) && (!tomber))
                 {
                     Console.WriteLine("Votre progression est stoppée par un trou devant vous");
                     Console.ReadLine();
-                    player.playNormal();
-                    rencontre.marchandPotion();
-                    if (!Hero.Mort) Console.WriteLine("Vous reprenez la route");
+                    tomber = rencontre.pontAgi(Hero);
                 }
+                i += 1;
+            } while ((i < 3) || (!tomber));
+            if (tomber)
+            {
+                int degat = dede.Rolldice(1, 3);
+                Console.WriteLine($"Vous tombez du pont et faites une chute douloureuse qui vous inflige {degat} ");
+                Hero.Pv -= degat;
+                if (Hero.Pv < 0)
+                {
+                    Console.WriteLine("Vous êtes tué par la chute !");
+                    Hero.Mort = true;
+                }
+                else Console.WriteLine("Vou parvenez tant bien que mal à vous relevez et à) ressortir de la crevasse de l'autre côté");
+            }
+            else Console.WriteLine("Vous reprenez votre chemin");
             Console.ReadLine();
             int choix = 14;
             return choix;

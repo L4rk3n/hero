@@ -24,7 +24,6 @@ namespace ConsoleApp1.Fiches
             Console.WriteLine($"Points de vie : {Pv},Niveau d'armure :{Armure}");
             Console.WriteLine($"Force : {Force},Agilité :{Agi}");
             Console.WriteLine($"Quantité d'or :{Gold},Quantité d'acier :{Acier},Quantité de cuir: {Cuir}");
-            Console.ReadLine();
             Console.Clear();
         }
     }
