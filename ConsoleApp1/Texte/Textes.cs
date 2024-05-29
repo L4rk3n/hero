@@ -28,7 +28,7 @@ namespace ConsoleApp1.Texte
                     { 11, "Vous marcher le longt de la route qui semble longer la crevasse qui se prolonge a perte de vue.Celle-ci est bordée d'herbes hautes ou pourraient se cacher maintes ennemis.\n C'est donc tout en restant sur vos gardes que vous progresser." },
                     { 12, "Vous passer le pont sans encombre et vous continuez votre progression sur cette route, bordée d'herbes hautes ou pourraient se cacher maintes ennemis.\n C'est donc tout en restant sur vos gardes que vous progresser." },
                     { 13, "Apres de longues heures de marche, vous arrivez devant un pont qui est partiellement effondré, il est possible de le traverser mais cela à l'air dangereux." },
-                    { 14, "les deux routes se rejoignent et le chemin continue tout droit jusque au pied de la montagne" },
+                    { 14, "les deux routes se rejoignent et le chemin continue tout droit jusque au pied de la montagne, le soleil se couchant vous décider de faire une alte au bord de la route et d'installer votre camps pour passer la nuit.En espérant que votre feu n'attire pas trops l'attention." },
                     { 15, "" },
 
                 };

@@ -207,14 +207,17 @@ namespace ConsoleApp1.Chapitres
             if (tomber)
             {
                 int degat = dede.Rolldice(1, 3);
+                player.playFall();
                 Console.WriteLine($"Vous tombez du pont et faites une chute douloureuse qui vous inflige {degat} ");
                 Hero.Pv -= degat;
+
                 if (Hero.Pv < 0)
                 {
+                    player.playCrit();
                     Console.WriteLine("Vous êtes tué par la chute !");
                     Hero.Mort = true;
                 }
-                else Console.WriteLine("Vou parvenez tant bien que mal à vous relevez et à) ressortir de la crevasse de l'autre côté");
+                else Console.WriteLine("Vou parvenez tant bien que mal à vous relevez et à ressortir de la crevasse de l'autre côté");
             }
             else Console.WriteLine("Vous reprenez votre chemin");
             Console.ReadLine();
@@ -223,8 +226,9 @@ namespace ConsoleApp1.Chapitres
         }
         public int Chapitre14(Fiches.Hero Hero)
         {
-            player.playWind();
-            int choix = DemanderChoix(new int[] { 2, 3, 4 });
+            player.playCampfire();
+            Console.ReadLine();
+            int choix = 15;
             return choix;
         }
         public int Chapitre15(Fiches.Hero Hero)

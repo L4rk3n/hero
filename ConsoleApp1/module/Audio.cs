@@ -65,5 +65,17 @@ namespace ConsoleApp1.module
             player.Load();
             player.Play();
         }
+        public void playFall()
+        {
+            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\ConsoleApp1\Sound\fall.wav");
+            player.Load();
+            player.Play();
+        }
+        public void playCampfire()
+        {
+            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\ConsoleApp1\Sound\campfire.wav");
+            player.Load();
+            player.Play();
+        }
     }
 }

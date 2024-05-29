@@ -144,158 +144,29 @@ namespace ConsoleApp1.Dessins
 
         public void Dessin10()
         {
-            StringBuilder sb = new StringBuilder();
-
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-
-            Console.WriteLine(sb.ToString());
+            Console.Clear();
+            Console.WriteLine(" (              ````                                            \r\n;`             ;;                                               \r\n ;;  -\"\"-.   ;;                 -;'  -.                         \r\n   \"\"     ``                      `.   `.                       \r\n                                    ;    `                      \r\n           `;                  -          ;         -.        ;`\r\n             `-  `.         .'`  .-'             .--`  ;     ;  \r\n              ;    `-.   ;    `-'             .;`     ;       `.\r\n              .        ``                                       \r\n               `            .--------.             .'           \r\n             ...        .--'``````````'--.        ;.            \r\n            `      . .-' .``          ``. '-. .      `.         \r\n          ;-.;  .  .' .`                  `. '.  .    ;         \r\n              .' .' .`                      `. '. '.    .       \r\n_____/'.-.._____________________________________________________\r\n                             )\\                                 \r\n                            ( (                                 \r\n                             ) \\              `  J  `           \r\n`                .          /  (                         .      \r\n             ..             \\   \\  i   X  Y o1                  \r\n                        .    )   )  `   l   p      ..           \r\n;                           /   (,      l(@) l                ..\r\n  q      ` .  '            (     \\.     i    p   R          .;  \r\n   \\  t            ;        )     \\`   j,.. ,.q,/Pqoj          `\r\n    \\/            `       ./       \\`;     `'     `          .. \r\n  '-     \\;            -'.'    ;    \\ `                     `. `\r\n.--.`.; ,-.. ,.-, ;' `.-'       `    `.'.   .--.\"\"-._        .; \r\n    `............---\"\"     ;_.         )   (  '=    /         `-\r\n ~                                    /     `------'     .      \r\n                 ~                  ,'  \\|//            `'      \r\n                ~           ~       ; `. \"\"                   ..\r\n                                     `.  )     \\\"       .--\"\"\"");
         }
         public void Dessin11()
         {
-            StringBuilder sb = new StringBuilder();
-
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-
-            Console.WriteLine(sb.ToString());
+            Console.Clear();
+            Console.WriteLine(" (              ````                                            \r\n;`             ;;                                               \r\n ;;  -\"\"-.   ;;                 -;'  -.                         \r\n   \"\"     ``                      `.   `.                       \r\n                                    ;    `                      \r\n           `;                  -          ;         -.        ;`\r\n             `-  `.         .'`  .-'             .--`  ;     ;  \r\n              ;    `-.   ;    `-'             .;`     ;       `.\r\n              .        ``                                       \r\n               `            .--------.             .'           \r\n             ...        .--'``````````'--.        ;.            \r\n            `      . .-' .``          ``. '-. .      `.         \r\n          ;-.;  .  .' .`                  `. '.  .    ;         \r\n              .' .' .`                      `. '. '.    .       \r\n_____/'.-.._____________________________________________________\r\n                             )\\                                 \r\n                            ( (                                 \r\n                             ) \\              `  J  `           \r\n`                .          /  (                         .      \r\n             ..             \\   \\  i   X  Y o1                  \r\n                        .    )   )  `   l   p      ..           \r\n;                           /   (,      l(@) l                ..\r\n  q      ` .  '            (     \\.     i    p   R          .;  \r\n   \\  t            ;        )     \\`   j,.. ,.q,/Pqoj          `\r\n    \\/            `       ./       \\`;     `'     `          .. \r\n  '-     \\;            -'.'    ;    \\ `                     `. `\r\n.--.`.; ,-.. ,.-, ;' `.-'       `    `.'.   .--.\"\"-._        .; \r\n    `............---\"\"     ;_.         )   (  '=    /         `-\r\n ~                                    /     `------'     .      \r\n                 ~                  ,'  \\|//            `'      \r\n                ~           ~       ; `. \"\"                   ..\r\n                                     `.  )     \\\"       .--\"\"\"");
         }
         public void Dessin12()
         {
-            StringBuilder sb = new StringBuilder();
-
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-
-            Console.WriteLine(sb.ToString());
+            Console.Clear();
+            Console.WriteLine(" (              ````                                            \r\n;`             ;;                                               \r\n ;;  -\"\"-.   ;;                 -;'  -.                         \r\n   \"\"     ``                      `.   `.                       \r\n                                    ;    `                      \r\n           `;                  -          ;         -.        ;`\r\n             `-  `.         .'`  .-'             .--`  ;     ;  \r\n              ;    `-.   ;    `-'             .;`     ;       `.\r\n              .        ``                                       \r\n               `            .--------.             .'           \r\n             ...        .--'``````````'--.        ;.            \r\n            `      . .-' .``          ``. '-. .      `.         \r\n          ;-.;  .  .' .`                  `. '.  .    ;         \r\n              .' .' .`                      `. '. '.    .       \r\n_____/'.-.._____________________________________________________\r\n                             )\\                                 \r\n                            ( (                                 \r\n                             ) \\              `  J  `           \r\n`                .          /  (                         .      \r\n             ..             \\   \\  i   X  Y o1                  \r\n                        .    )   )  `   l   p      ..           \r\n;                           /   (,      l(@) l                ..\r\n  q      ` .  '            (     \\.     i    p   R          .;  \r\n   \\  t            ;        )     \\`   j,.. ,.q,/Pqoj          `\r\n    \\/            `       ./       \\`;     `'     `          .. \r\n  '-     \\;            -'.'    ;    \\ `                     `. `\r\n.--.`.; ,-.. ,.-, ;' `.-'       `    `.'.   .--.\"\"-._        .; \r\n    `............---\"\"     ;_.         )   (  '=    /         `-\r\n ~                                    /     `------'     .      \r\n                 ~                  ,'  \\|//            `'      \r\n                ~           ~       ; `. \"\"                   ..\r\n                                     `.  )     \\\"       .--\"\"\"");
         }
+
         public void Dessin13()
         {
-            StringBuilder sb = new StringBuilder();
-
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-
-            Console.WriteLine(sb.ToString());
+            Console.Clear();
+            Console.WriteLine("   [[]]-[[]]-[[]]-[[]]-[[]]-[[]]-[[]]-[[]]-[[]]-[[]]-[[]]\r\n   .-.`| `-/-.__/.-'\\_.-._,'/`-._'\\_.-._`-'_/-._.'|/.-'\\-\r\n   \\_.-`./`-._'\\__.-`-.__.-`--._/--.`-._\\`-._\\__.-)`-'._/\r\n   `._-'.\\_.---._-.\\_`-..`\\_.---._`-.__.-`'._.--./`-'._,'\r\n   __/`.-/       `.'_`./`.'       '.\\__.-`.'    (_.-\\_,-.\r\n   `._-/'          |._.-|           |.'`.|       `(_.`-._\r\n   .-',`)          | /`.|           |`-/`|         ;.-'_/\r\n   `\\,-/           |\\.-'|           |\\-'`|          ;\\_,-\r\n    -./`._        [[[[[[[[         [[[[[[[[         .',-'\r\n    `.`--.~~-^_~-/.`-._`-.\\^~-_~-^/`-.'-,.'\\^~-~_^\"'`-.'_\r\n    -,.'\"-\"~^-~_~- - - _- -~^-_.~ - -_ - - -~- . \"'\"-\"-\"\"\r\n    \"\"-'\"-\"\"-\"~- _~.^-~-^.-^_.- .^~.-  ~-. ~^_-\"\"-\"\"-\"'-\"\r\n    jgs \"\"-'\"-\"    ~- ^. - ~ -~^ - ~  ^~- ~     \"\"-\"'-'");
         }
         public void Dessin14()
         {
-            StringBuilder sb = new StringBuilder();
-
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-            sb.AppendLine("");
-
-            Console.WriteLine(sb.ToString());
+            Console.Clear();
+            Console.WriteLine("    /     /\\\r\n      /     /  \\\r\n     /_____/----\\_    (  \r\n    \"     \"          ).  \r\n   _ ___          o (:') o   \r\n  (@))_))        o ~/~~\\~ o   \r\n                  o  o  o\n\n");
         }
         public void Dessin15()
         {
