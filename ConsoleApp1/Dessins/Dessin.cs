@@ -166,7 +166,7 @@ namespace ConsoleApp1.Dessins
         public void Dessin14()
         {
             Console.Clear();
-            Console.WriteLine("    /     /\\\r\n      /     /  \\\r\n     /_____/----\\_    (  \r\n    \"     \"          ).  \r\n   _ ___          o (:') o   \r\n  (@))_))        o ~/~~\\~ o   \r\n                  o  o  o\n\n");
+            Console.WriteLine("       /     /\\\r\n      /     /  \\\r\n     /_____/----\\_    (  \r\n    \"     \"          ).  \r\n   _ ___          o (:') o   \r\n  (@))_))        o ~/~~\\~ o   \r\n                  o  o  o\n\n");
         }
         public void Dessin15()
         {

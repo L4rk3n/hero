@@ -29,7 +29,7 @@ namespace ConsoleApp1.Dessins
                     sb.AppendLine("         /||!||:.___.|!||\\              \\_│ .`-´│.  │\\___/");
                     sb.AppendLine("        /|!|||!|    |!||!\\:.            │ │ .│  │.  │/   │");
                     sb.AppendLine("     ,'//!||!||!`._.||!||,:\\\\\\        ├ │ .│__│.  /│  .┤");
-                    sb.AppendLine("    : :: |!|||!| SSt|!||! |!::           │ │─_│▄▄│_-´ │   │");
+                    sb.AppendLine("    : :: |!|||!|    |!||! |!::           │ │─_│▄▄│_-´ │   │");
                     sb.AppendLine("    | |! !||!|||`---!|!|| ||!|           │ │          /   │");
                     sb.AppendLine("    | || |!|||!|    |!||! |!||           ( │  '──,   (_,  )");
                     sb.AppendLine("");
@@ -179,6 +179,11 @@ namespace ConsoleApp1.Dessins
 
 
                 Console.WriteLine(sb.ToString());
+            }
+            if (nom == "chauve-souris")
+            {
+                Console.Clear();
+                Console.WriteLine("    =/\\                 /\\=\r\n    / \\'._   (\\_/)   _.'/ \\\r\n   / .''._'--(o.o)--'_.''. \\\r\n  /.' _/ |`'=/ \" \\='`| \\_ `.\\\r\n /` .' `\\;-,'\\___/',-;/` '. '\\\r\n/.-'       `\\(-V-)/`       `-.\\\r\n`            \"   \"            `");
             }
             if (nom == "potionmaster")
             {

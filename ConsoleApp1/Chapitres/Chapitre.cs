@@ -156,12 +156,14 @@ namespace ConsoleApp1.Chapitres
             player.playWind();
 
             for (int i = 1; i <= 4; i++)
-                if ((dede.Rolldice(1, 6) < 3) && (!Hero.Mort))
             {
-                Console.WriteLine("Votre progression est stoppée net par l'apparition d'un ennemi");
-                Console.ReadLine();
-                player.playNormal();
-                combat.Combatexe(Hero);
+                if ((dede.Rolldice(1, 6) < 3) && (!Hero.Mort))
+                {
+                    Console.WriteLine("Votre progression est stoppée net par l'apparition d'un ennemi");
+                    Console.ReadLine();
+                    player.playNormal();
+                    combat.Combatexe(Hero);
+                }
                 if (!Hero.Mort) Console.WriteLine("Vous reprenez la route");
             }
             Console.ReadLine();
@@ -175,6 +177,7 @@ namespace ConsoleApp1.Chapitres
             player.playWind();
 
             for (int i = 1; i <= 2; i++)
+            {
                 if ((dede.Rolldice(1, 6) < 3) && (!Hero.Mort))
                 {
                     Console.WriteLine("Votre progression est stoppée net par l'apparition d'un ennemi");
@@ -183,6 +186,7 @@ namespace ConsoleApp1.Chapitres
                     combat.Combatexe(Hero);
                     if (!Hero.Mort) Console.WriteLine("Vous reprenez la route");
                 }
+            }
             Console.ReadLine();
             int choix = 13;
             return choix;
@@ -226,8 +230,21 @@ namespace ConsoleApp1.Chapitres
         }
         public int Chapitre14(Fiches.Hero Hero)
         {
+            Combat combat = new Combat();
+            Dice dede = new Dice();
             player.playCampfire();
             Console.ReadLine();
+            for (int i = 1; i <= 2; i++)
+            {
+                if ((dede.Rolldice(1, 6) < 3) && (!Hero.Mort))
+                {
+                    Console.WriteLine("Vous êtes réveillé par des bruits supspects et un ennemi sort des ombres");
+                    Console.ReadLine();
+                    player.playNormal();
+                    combat.Combatexe(Hero);
+                    if (!Hero.Mort) Console.WriteLine("Vous vous recouchez en esperant ne plus être dérangé ");
+                }
+            }
             int choix = 15;
             return choix;
         }
