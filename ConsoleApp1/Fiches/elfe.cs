@@ -20,6 +20,7 @@ namespace ConsoleApp1.Fiches
             Degat = 3;
             Agi = 6;
             Pv = 8;
+            PvMax = Pv;
             Armure = 2;
             Gold = 5;
             Acier = 0;

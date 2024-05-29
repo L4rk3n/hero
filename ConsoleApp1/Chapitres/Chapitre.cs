@@ -32,6 +32,11 @@ namespace ConsoleApp1.Chapitres
         Chapitre8,
         Chapitre9,
         Chapitre10,
+        Chapitre11,
+        Chapitre12,
+        Chapitre13,
+        Chapitre14,
+        Chapitre15,
         };
         }
         Audio player = new Audio();
@@ -110,7 +115,8 @@ namespace ConsoleApp1.Chapitres
             player.playTown();
             Console.ReadLine();
             rencontre.marchandPotion(Hero);
-            int choix = DemanderChoix(new int[] {6});
+            Console.ReadLine();
+            int choix = 6;
             return choix;
         }
         public int Chapitre6(Fiches.Hero Hero)
@@ -139,7 +145,75 @@ namespace ConsoleApp1.Chapitres
         }
         public int Chapitre10(Fiches.Hero Hero)
         {
-            player.playWoods();
+            player.playWind();
+            int choix = DemanderChoix(new int[] { 11,12});
+            return choix;
+        }
+        public int Chapitre11(Fiches.Hero Hero)
+        {
+            Dice dede = new Dice();
+            Combat combat = new Combat();
+            player.playWind();
+
+            for (int i = 1; i <= 4; i++)
+                if ((dede.Rolldice(1, 6) < 3) && (!Hero.Mort))
+            {
+                Console.WriteLine("Votre progression est stoppée net par l'apparition d'un ennemi");
+                Console.ReadLine();
+                player.playNormal();
+                combat.Combatexe(Hero);
+                if (!Hero.Mort) Console.WriteLine("Vous reprenez la route");
+            }
+            Console.ReadLine();
+            int choix = 14;
+            return choix;
+        }
+        public int Chapitre12(Fiches.Hero Hero)
+        {
+            Dice dede = new Dice();
+            Combat combat = new Combat();
+            player.playWind();
+
+            for (int i = 1; i <= 2; i++)
+                if ((dede.Rolldice(1, 6) < 3) && (!Hero.Mort))
+                {
+                    Console.WriteLine("Votre progression est stoppée net par l'apparition d'un ennemi");
+                    Console.ReadLine();
+                    player.playNormal();
+                    combat.Combatexe(Hero);
+                    if (!Hero.Mort) Console.WriteLine("Vous reprenez la route");
+                }
+            Console.ReadLine();
+            int choix = 13;
+            return choix;
+        }
+        public int Chapitre13(Fiches.Hero Hero)
+        {
+            player.playWind();
+            Dice dede = new Dice();
+            Event rencontre = new Event();
+            for (int i = 1; i <= 3; i++)
+                if ((dede.Rolldice(1, 6) < 3) && (!Hero.Mort))
+                {
+                    Console.WriteLine("Votre progression est stoppée par un trou devant vous");
+                    Console.ReadLine();
+                    player.playNormal();
+                    rencontre.marchandPotion();
+                    if (!Hero.Mort) Console.WriteLine("Vous reprenez la route");
+                }
+            Console.ReadLine();
+            int choix = 14;
+            return choix;
+        }
+        public int Chapitre14(Fiches.Hero Hero)
+        {
+            player.playWind();
+            int choix = DemanderChoix(new int[] { 2, 3, 4 });
+            return choix;
+        }
+        public int Chapitre15(Fiches.Hero Hero)
+        {
+            player.playWind();
             int choix = DemanderChoix(new int[] { 2, 3, 4 });
             return choix;
         }

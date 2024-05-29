@@ -24,7 +24,10 @@ namespace ConsoleApp1.Dessins
             Dessin9,
             Dessin10,
             Dessin11,
-            Dessin12
+            Dessin12,
+            Dessin13,
+            Dessin14,
+            Dessin15,
         };
         }
         public Delegate[] dessins { get; set; }
@@ -232,10 +235,98 @@ namespace ConsoleApp1.Dessins
 
             Console.WriteLine(sb.ToString());
         }
+        public void Dessin13()
+        {
+            StringBuilder sb = new StringBuilder();
 
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
 
+            Console.WriteLine(sb.ToString());
+        }
+        public void Dessin14()
+        {
+            StringBuilder sb = new StringBuilder();
 
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
 
+            Console.WriteLine(sb.ToString());
+        }
+        public void Dessin15()
+        {
+            StringBuilder sb = new StringBuilder();
 
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+            sb.AppendLine("");
+
+            Console.WriteLine(sb.ToString());
+        }
     }
 }

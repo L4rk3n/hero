@@ -14,6 +14,7 @@ class Program
     static void Main(string[] args)
 
     {
+        Audio player = new Audio();
         Console.SetWindowSize(150, 50);
         Dessin crayon = new Dessin();
         Textes roman = new Textes();
@@ -28,8 +29,12 @@ class Program
         Chapitre histoire = new Chapitre();
         Hero hero;
 
-        
+        player.playIntro();
         crayon.dessins[0].DynamicInvoke();
+        Console.ReadLine();
+        Console.Clear();
+
+        Console.WriteLine($" Avante de démarrer voici quelques règles à suivre pour progresser\n - Lorsque le jeu vous pose une question ou vous offfre un choix repondez lui et appuyez sur la touchee (entrée) \n - Si le jeu est pausé mais ne requiert aucun choix,prenez le temps de lire et appuyer simplement sur (entrée) \nBon jeu à vous !");
         Console.ReadLine();
         Console.Clear();
 
@@ -57,6 +62,7 @@ class Program
 
         do
         {
+            Console.Clear (); 
             crayon.dessins[nextChap].DynamicInvoke();
             affichage = roman.dictionnaire[nextChap];
             Console.WriteLine(affichage);

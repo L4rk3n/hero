@@ -15,6 +15,7 @@ namespace ConsoleApp1.Fiches
         public int Crit { get; set; }
         public int Degat { get; set; }
         public int Agi { get; set; }
+        public int PvMax { get; set; }
         public int Pv { get; set; }
         public int Armure { get; set; }
         public bool Mort { get; set; }

@@ -211,6 +211,33 @@ namespace ConsoleApp1.Dessins
 
                 Console.WriteLine(sb.ToString());
             }
+            if (nom == "trou")
+            {
+                StringBuilder sb = new StringBuilder();
+
+                sb.AppendLine("                                       ");
+                sb.AppendLine("*******************************************");
+                sb.AppendLine("******************    *********************");
+                sb.AppendLine("*************             *****************");
+                sb.AppendLine("*****                              ********");
+                sb.AppendLine("****                               ********");
+                sb.AppendLine("****                               ********");
+                sb.AppendLine("***                                 *******");
+                sb.AppendLine("****                               ********");
+                sb.AppendLine("*******                        ************");
+                sb.AppendLine("*********                     *************");
+                sb.AppendLine("**********                  ***************");
+                sb.AppendLine("************              *****************");
+                sb.AppendLine("*****************    **********************");
+                sb.AppendLine("*******************************************");
+                sb.AppendLine("");
+                sb.AppendLine("");
+                sb.AppendLine("");
+                sb.AppendLine("");
+                sb.AppendLine("");
+
+                Console.WriteLine(sb.ToString());
+            }
 
 
         }

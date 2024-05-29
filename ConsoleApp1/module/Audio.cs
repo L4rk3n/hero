@@ -43,13 +43,25 @@ namespace ConsoleApp1.module
         }
         public void playHorse()
         {
-            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\Sound\horse.wav");
+            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\ConsoleApp1\Sound\horse.wav");
             player.Load();
             player.Play();
         }
         public void playBubbles()
         {
-            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\Sound\bubbles.wav");
+            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\ConsoleApp1\Sound\bubbles.wav");
+            player.Load();
+            player.Play();
+        }
+        public void playIntro()
+        {
+            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\ConsoleApp1\Sound\intro.wav");
+            player.Load();
+            player.Play();
+        }
+        public void playWind()
+        {
+            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\ConsoleApp1\Sound\wind.wav");
             player.Load();
             player.Play();
         }

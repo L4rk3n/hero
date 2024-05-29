@@ -23,6 +23,7 @@ namespace ConsoleApp1.Fiches
             Degat = 2+dede.Rolldice(1, 8);
             Agi = 2+dede.Rolldice(1, 6);
             Pv = 2+dede.Rolldice(1, 10);
+            PvMax = Pv;
             Armure = dede.Rolldice(1, 3);
             bool Mort = false;
         }

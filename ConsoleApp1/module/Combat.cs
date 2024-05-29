@@ -99,7 +99,20 @@ namespace ConsoleApp1.module
                     if (answer == "o")
                     {
                         champion.Potion -= 1;
-                        champion.Pv += 5;
+                        if (champion.Pv + 5 > champion.PvMax)
+                        {
+                            Console.WriteLine($"Vos points de vie ont atteint le maximum {champion.PvMax}");
+                            champion.Pv = champion.PvMax;
+                        }
+                        else
+                        {
+                            champion.Pv += 5;
+                        }
+
+                    }
+                    
+                    { 
+
                     }
                 }
 

@@ -42,6 +42,32 @@ namespace ConsoleApp1.module
             Console.WriteLine("Il est temps de reprendre votre route !");
             Console.ReadLine();
         }
+        public bool pontAgi(Hero Hero)
+        {
+            Pnj adversaire = new Pnj();
+            Console.Clear();
+            player.playWind();
+            adversaire.Dessinpnj("trou");
+            
+            Console.WriteLine("Il est temps de reprendre votre route !");
+            Console.ReadLine();
+        return tomber;
+        }
+
+        //public void atelier(Hero Hero);
+        //{
+        //    Console.ReadLine();
+        //}
+        //public void forge(Hero Hero);
+        //{
+        //    Console.ReadLine();
+        //}
+
+        //public void porteForce(Hero Hero);
+        //{
+        //    Console.ReadLine();
+        //}
+
     }
 
 }

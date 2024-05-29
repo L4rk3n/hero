@@ -19,6 +19,7 @@ namespace ConsoleApp1.Fiches
             Degat = 5;
             Agi = 3;
             Pv = 10;
+            PvMax = Pv;
             Armure = 4;
             Gold = 10;
             Potion = 3;
@@ -28,5 +29,4 @@ namespace ConsoleApp1.Fiches
 
         }
     }
-
 }
