@@ -77,5 +77,11 @@ namespace ConsoleApp1.module
             player.Load();
             player.Play();
         }
+        public void playDonjon()
+        {
+            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\ConsoleApp1\Sound\donjon.wav");
+            player.Load();
+            player.PlayLooping();
+        }
     }
 }

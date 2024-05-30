@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Media;
 using ConsoleApp1.Dessins;
-using ConsoleApp1.Donjon;
+using ConsoleApp1.DonjonBuilder;
 
 namespace ConsoleApp1.module
 {
@@ -64,28 +64,33 @@ namespace ConsoleApp1.module
                 Console.WriteLine("Vous parvenez a sauter par dessus le trou sans problème");
             }
             Console.ReadLine();
-        return tomber;
+            return tomber;
         }
         public void miniDonjon(Hero Hero)
         {
-            Case[,] Donjon = Case.CreerDonjon(15,15);
+            Location location = new Location(0, 0);
+            player.playDonjon();
+            Donjon donjon = new Donjon(15);
+            donjon.RemplirDonjon();
+            donjon.MurerDonjon1();
+            donjon.AfficherDonjon();
+            bool fin = false;
+            location.PosX = 1;
+            location.PosY = 1;
+            do
+            {               
+                ConsoleKeyInfo keyInfo = Console.ReadKey();
+                location= donjon.DeplacerHero(keyInfo, location, donjon);
+                if ((location.PosY == 13) && (location.PosY == 13))
+                {
+                    fin = true;
+                }
+                else donjon.AfficherDonjon();
+            } while (!fin || Hero.Mort);
+
             Console.WriteLine("Vous sortez du mini donjon pour continuer l'aventure !");
             Console.ReadLine();
         }
-
-        //public void atelier(Hero Hero);
-        //{
-        //    Console.ReadLine();
-        //}
-        //public void forge(Hero Hero);
-        //{
-        //    Console.ReadLine();
-        //}
-
-        //public void porteForce(Hero Hero);
-        //{
-        //    Console.ReadLine();
-        //}
 
     }
 

@@ -255,6 +255,8 @@ namespace ConsoleApp1.Chapitres
         }
         public int Chapitre15(Fiches.Hero Hero)
         {
+            Event rencontre = new Event();
+            rencontre.miniDonjon(Hero);
             player.playWind();
             int choix = 16;
             return choix;
