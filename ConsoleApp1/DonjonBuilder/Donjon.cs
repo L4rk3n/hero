@@ -63,7 +63,7 @@ namespace ConsoleApp1.DonjonBuilder
                 }               
             }
             Console.SetCursorPosition(60,10);
-            Console.WriteLine(" Déplacez-vous avec les flêches du clavier");
+            Console.WriteLine(" Déplacez votre personnage H avec les flêches du clavier");
             Console.SetCursorPosition(60,11);
             Console.WriteLine(" Recupérer l'or sur les cases G");
             Console.SetCursorPosition(60,12);
@@ -167,7 +167,6 @@ namespace ConsoleApp1.DonjonBuilder
             switch (donjon[newX, newY].Valeur)
             {
                 case 1:
-
                     Combat combat = new Combat();
                     Console.SetCursorPosition(60, 16);
                     Console.WriteLine("Vous tombez nez à nez avec un monstre");
@@ -199,7 +198,6 @@ namespace ConsoleApp1.DonjonBuilder
             }
 
             return newLocation;
-
         }
 
     }
