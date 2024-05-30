@@ -1,4 +1,5 @@
 ﻿
+using ConsoleApp1.Fiches;
 using ConsoleApp1.module;
 using System;
 using System.Collections.Generic;
@@ -141,8 +142,9 @@ namespace ConsoleApp1.DonjonBuilder
             }
 
         }
-        public Location DeplacerHero(ConsoleKeyInfo keyInfo,Location location,Donjon donjon)
+        public Location DeplacerHero(ConsoleKeyInfo keyInfo,Location location,Donjon donjon,Hero hero)
         {
+            Dice dede = new Dice();
             int newX = location.PosX;
             int newY = location.PosY;
             Location newLocation = new Location(newX,newY);
@@ -160,6 +162,30 @@ namespace ConsoleApp1.DonjonBuilder
                     break;
                 case ConsoleKey.RightArrow:
                     newY += 1;
+                    break;
+            }
+            switch (donjon[newX, newY].Valeur)
+            {
+                case 1:
+
+                    Combat combat = new Combat();
+                    Console.SetCursorPosition(60, 16);
+                    Console.WriteLine("Vous tombez nez à nez avec un monstre");
+                    Console.SetCursorPosition(60, 17);
+                    Console.WriteLine("Appuyer sur entrée pour continuer");
+                    Console.ReadLine();
+                    combat.Combatexe(hero); 
+                    break;
+                case 2:
+                    int gainor = dede.Rolldice(1,6) ;
+                    Console.SetCursorPosition(60, 15);
+                    Console.WriteLine($"Vous gagner {gainor} pièces d'or");
+                    hero.Gold += gainor;
+                    Console.SetCursorPosition(60, 16);
+                    Console.WriteLine($"Ce qui vous fait un total de {hero.Gold} pièces d'or");
+                    Console.SetCursorPosition(60, 17);
+                    Console.WriteLine("Appuyer sur entrée pour continuer");
+                    Console.ReadLine();
                     break;
             }
             if (donjon[newX, newY].Valeur < 5)

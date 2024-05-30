@@ -66,7 +66,7 @@ namespace ConsoleApp1.module
             Console.ReadLine();
             return tomber;
         }
-        public void miniDonjon(Hero Hero)
+        public void miniDonjon(Hero hero)
         {
             Location location = new Location(0, 0);
             player.playDonjon();
@@ -81,13 +81,13 @@ namespace ConsoleApp1.module
             do
             {               
                 ConsoleKeyInfo keyInfo = Console.ReadKey();
-                location= donjon.DeplacerHero(keyInfo, location, donjon);
+                location= donjon.DeplacerHero(keyInfo, location, donjon,hero);
                 if ((location.PosX == 13) && (location.PosY == 13))
                 {
                     fin = true;
                 }
                 else donjon.AfficherDonjon();
-            } while (!fin || Hero.Mort);
+            } while (!fin || hero.Mort);
             Console.SetCursorPosition(60,20);
             Console.WriteLine("Vous sortez du mini donjon pour continuer l'aventure !");
             Console.ReadLine();

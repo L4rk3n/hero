@@ -86,7 +86,6 @@ namespace ConsoleApp1.Chapitres
             Console.ReadLine();
             Combat combat = new Combat();
             combat.Combatexe(Hero);
-            Hero.AfficherInfos();
             int choix = 4;
 
             return choix;
