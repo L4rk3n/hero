@@ -73,6 +73,7 @@ namespace ConsoleApp1.module
             Donjon donjon = new Donjon(15);
             donjon.RemplirDonjon();
             donjon.MurerDonjon1();
+            donjon.PeuplerDonjon(donjon);
             donjon.AfficherDonjon();
             bool fin = false;
             location.PosX = 1;
@@ -81,13 +82,13 @@ namespace ConsoleApp1.module
             {               
                 ConsoleKeyInfo keyInfo = Console.ReadKey();
                 location= donjon.DeplacerHero(keyInfo, location, donjon);
-                if ((location.PosY == 13) && (location.PosY == 13))
+                if ((location.PosX == 13) && (location.PosY == 13))
                 {
                     fin = true;
                 }
                 else donjon.AfficherDonjon();
             } while (!fin || Hero.Mort);
-
+            Console.SetCursorPosition(60,20);
             Console.WriteLine("Vous sortez du mini donjon pour continuer l'aventure !");
             Console.ReadLine();
         }

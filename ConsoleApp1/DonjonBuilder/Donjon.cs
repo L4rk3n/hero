@@ -1,4 +1,5 @@
 ﻿
+using ConsoleApp1.module;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -58,10 +59,60 @@ namespace ConsoleApp1.DonjonBuilder
                 {
                     
                     Console.Write(donjon[i, j].Apparence);
-                }
-                Console.WriteLine();
+                }               
+            }
+            Console.SetCursorPosition(60,10);
+            Console.WriteLine(" Déplacez-vous avec les flêches du clavier");
+            Console.SetCursorPosition(60,11);
+            Console.WriteLine(" Recupérer l'or sur les cases G");
+            Console.SetCursorPosition(60,12);
+            Console.WriteLine(" Affronter les monstres sur les cases M");
+            Console.SetCursorPosition(60,13);
+            Console.WriteLine(" Recupérer l'or sur les cases G");
+            Console.SetCursorPosition(60,14);
+            Console.WriteLine(" Prener la sortie sur la cases S");
+        }
+        public void PeuplerDonjon(Donjon donjon)
+        {
+            Dice dede = new Dice();
+            int nombreM = 4 + dede.Rolldice(1, 4);
+            int nombreG = 3 + dede.Rolldice(1, 3);
+            int posx = 0;
+            int posy = 0;
+            for (int i = 1; i < nombreM; i++)
+            {
+                bool transfert = false;
+                do
+                {
+                    posx = dede.Rolldice(1, donjon.Taille);
+                    posy = dede.Rolldice(1, donjon.Taille);
+                    if (donjon[posx, posy].Valeur < 1)
+                    {
+                        transfert = true;
+                        donjon[posx, posy].Valeur = 1;
+                        donjon[posx, posy].Apparence = " M ";
+                    }
+                } while (!transfert);
+               
+            }
+            for (int i = 1; i < nombreG; i++)
+            {
+                bool transfert = false;
+                do
+                {
+                    posx = dede.Rolldice(1, donjon.Taille);
+                    posy = dede.Rolldice(1, donjon.Taille);
+                    if (donjon[posx, posy].Valeur < 1)
+                    {
+                        transfert = true;
+                        donjon[posx, posy].Valeur = 2;
+                        donjon[posx, posy].Apparence = " G ";
+                    }
+                } while (!transfert);
+
             }
         }
+
         public void MurerDonjon1()
         {
             for (int i = 4; i < 12; i++)
