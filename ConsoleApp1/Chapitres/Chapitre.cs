@@ -255,9 +255,16 @@ namespace ConsoleApp1.Chapitres
         public int Chapitre15(Fiches.Hero Hero)
         {
             Event rencontre = new Event();
-            Console.ReadLine();
-            rencontre.miniDonjon(Hero);
+            string answer = "z";
             player.playWind();
+            do
+            {
+                Console.WriteLine($"Voulez vous explorer le mini donjon?o/n");
+                answer = Console.ReadLine();
+            } while ((answer != "o") && (answer != "n"));
+            if (answer=="o") rencontre.miniDonjon(Hero);
+            Console.WriteLine("Vous reprenez votre chemin");
+            Console.ReadLine();
             int choix = 16;
             return choix;
         }

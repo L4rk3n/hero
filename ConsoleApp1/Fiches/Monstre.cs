@@ -18,9 +18,9 @@ namespace ConsoleApp1.Fiches
             Race = racelist[dede.Rolldice(1, racelist.Length)];
             Nom = Race + " 1 ";
             Force =2+ dede.Rolldice(1,6);
-            Capcomb = dede.Rolldice(1, 6);
+            Capcomb = 3 +dede.Rolldice(1, 3);
             Crit = dede.Rolldice(1, 2);
-            Degat = 2+dede.Rolldice(1, 8);
+            Degat = 4+dede.Rolldice(1, 6);
             Agi = 2+dede.Rolldice(1, 6);
             Pv = 2+dede.Rolldice(1, 10);
             PvMax = Pv;
