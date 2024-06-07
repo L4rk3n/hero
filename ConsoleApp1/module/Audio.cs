@@ -13,73 +13,73 @@ namespace ConsoleApp1.module
     {
         public void playNormal()
         {
-            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\ConsoleApp1\Sound\base.wav");
+            SoundPlayer player = new SoundPlayer($@".\Sound\base.wav");
             player.Load();
             player.Play();
         }
         public void playCrit()
         {
-            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\ConsoleApp1\Sound\crit.wav");
+            SoundPlayer player = new SoundPlayer($@".\Sound\crit.wav");
             player.Load();
             player.Play();
         }
         public void playInnn()
         {
-            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\ConsoleApp1\Sound\tavern.wav");
+            SoundPlayer player = new SoundPlayer($@".\Sound\tavern.wav");
             player.Load();
             player.Play();
         }
         public void playWoods()
         {
-            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\ConsoleApp1\Sound\forest.wav");
+            SoundPlayer player = new SoundPlayer($@".\forest.wav");
             player.Load();
             player.Play();
         }
         public void playTown()
         {
-            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\ConsoleApp1\Sound\city.wav");
+            SoundPlayer player = new SoundPlayer($@".\Sound\city.wav");
             player.Load();
             player.Play();
         }
         public void playHorse()
         {
-            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\ConsoleApp1\Sound\horse.wav");
+            SoundPlayer player = new SoundPlayer($@".\Sound\horse.wav");
             player.Load();
             player.Play();
         }
         public void playBubbles()
         {
-            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\ConsoleApp1\Sound\bubbles.wav");
+            SoundPlayer player = new SoundPlayer($@".\Sound\bubbles.wav");
             player.Load();
             player.Play();
         }
         public void playIntro()
         {
-            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\ConsoleApp1\Sound\intro.wav");
+            SoundPlayer player = new SoundPlayer(@"..\Sound\intro.wav");
             player.Load();
             player.Play();
         }
         public void playWind()
         {
-            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\ConsoleApp1\Sound\wind.wav");
+            SoundPlayer player = new SoundPlayer($@".\Sound\wind.wav");
             player.Load();
             player.Play();
         }
         public void playFall()
         {
-            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\ConsoleApp1\Sound\fall.wav");
+            SoundPlayer player = new SoundPlayer($@".\Sound\fall.wav");
             player.Load();
             player.Play();
         }
         public void playCampfire()
         {
-            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\ConsoleApp1\Sound\campfire.wav");
+            SoundPlayer player = new SoundPlayer($@".\Sound\campfire.wav");
             player.Load();
             player.Play();
         }
         public void playDonjon()
         {
-            SoundPlayer player = new SoundPlayer(@"C:\Users\cedric.bouvier\Documents\hero\ConsoleApp1\ConsoleApp1\Sound\donjon.wav");
+            SoundPlayer player = new SoundPlayer($@".\Sound\donjon.wav");
             player.Load();
             player.PlayLooping();
         }
